@@ -1,0 +1,16 @@
+---
+/*Button props
+1. Text
+2. Size : sm, md, lg, xl
+3. theme: primary, secondary
+4. custom class
+5. default props: e.g. id
+*/
+
+const { text, size, theme } = Astro.props;
+---
+
+<button
+  class=`border-solid py-2 px-3 rounded-md font-bold ${size==='sm' && 'text-xs border-2'} ${size==='md' && 'text-md border-2'}`
+  >{text}</button
+>
